@@ -96,7 +96,7 @@ public class InvoiceService {
                 return amount * (percentage / 100.0);
             }
         } catch (NumberFormatException ignored) {
-            logger.error("This is a number format exception. Check into code for further clarity");
+            logger.error("This is a number format exception. Check into the codebase for further clarity");
         }
         return 0.0;
     }

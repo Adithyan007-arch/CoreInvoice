@@ -1,3 +1,21 @@
+<<<<<<< HEAD
 /target/
 /.apt_generated/
 /.apt_generated_tests/
+=======
+# Java - Spring Boot
+billing-backend/target/
+*.jar
+
+# Node - React
+billing-frontend/node_modules/
+billing-frontend/build/
+billing-frontend/.cache/
+
+# Logs & misc
+*.log
+.vscode/
+.idea/
+.DS_Store
+>>>>>>> origin/master
+>>>>>>> 1490050bdb327e9de4bfac184eef3f96df27b1e9
