@@ -90,10 +90,10 @@ def main():
 
     commit_message = sys.argv[1]
 
-    logging.info("\n==== PUSHING TO DEV ====")
+    logging.info("==== PUSHING TO DEV ====")
     commit_and_push("Dev", commit_message)
 
-    logging.info("\n==== CONFIRMATION REQUIRED FOR PROD ====")
+    print("\n==== CONFIRMATION REQUIRED FOR PROD ====")
     confirm = input("⚠️ Push to `Prod` as well? (yes/no): ").strip().lower()
     if confirm in ("yes", "y"):
         logging.info("\n==== PUSHING TO PROD ====")
@@ -101,7 +101,7 @@ def main():
     else:
         logging.info("🛑 Skipped pushing to `Prod`.")
 
-    logging.info("\n✅ All operations completed successfully.")
+    logging.info("✅ All operations completed successfully.")
 
 if __name__ == "__main__":
     main()
